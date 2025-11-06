@@ -37,7 +37,7 @@ namespace StockPricingForecasting
             var mlContext = new MLContext();
             
             // Load stock data from CSV file into a data view
-            var dataView = mlContext.Data.LoadFromTextFile<StockData>("stock_data.csv", separatorChar: ',');
+            var dataView = mlContext.Data.LoadFromTextFile<StockData>("data/stock_data.csv", separatorChar: ',');
             
             // Preview the loaded data to verify it was loaded correctly
             var preview = dataView.Preview();
